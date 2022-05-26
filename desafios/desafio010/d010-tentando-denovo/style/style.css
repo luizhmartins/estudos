@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+  font-family: 'idroid-font';
+  src: url(../fontes/idroid.otf)format('opentype');
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --cor1: #C5EBD6;
+  --cor2: #83E1AD;
+  --cor3: #3DDC84;
+  --cor4: #2FA866;
+  --cor5: #063D1D;
+
+  --font-default: Arial, Helvetica, sans-serif;
+  --android-font: 'idroid-font', sans-serif;
+  --spotlight-font: 'Bebas Neue', cursive;
+}
+
+body {
+  background-color: var(--cor2);
+  font-family: var(--font-default);
+  text-shadow: 0px 0px .7px rgba(0, 0, 0, 0.493);
+}
+
+/* 
+CABEÇALHO DA PÁGINA 
+*/
+header {
+  background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding:10px;
+}
+header h1 {
+  font-family: var(--spotlight-font);
+  font-size: 2.2em;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: .94em;
+  width: 400px;
+  margin:auto;
+}
+
+/*
+MENU DE NAVEGAÇÃO
+*/
+nav {
+  background-color: var(--cor5);
+  padding: 15px 10px 15px 10px;
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.425); 
+  width: 100%;
+}
+nav a {
+  font-weight: bold;
+  font-size: .84em;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+nav a:hover {
+  background-color: var(--cor3);
+  color: var(--cor5);
+  border-radius: 5px;
+}
+
+/*
+SEÇÃO PRINCIPAL
+*/
+main {
+
+}
+
+/*
+ARTIGO
+*/
+article {
+  background-color: white;
+  margin:0px auto 10px auto;
+  padding: 20px 17px;
+  border-radius: 0px 0px 10px 10px;
+  max-width: 800px;
+  min-width: 341px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+article h1 {
+  font-family: var(--android-font);
+  font-weight: normal;
+  font-size: 1.6em;
+  color: var(--cor5);
+}
+article h2 {
+  background-image: linear-gradient(to right, var(--cor2), transparent);
+  font-family: var(--android-font);
+  font-weight: normal;
+  font-size: 1.3em;
+  color: var(--cor5);
+  padding: 0px 10px;
+}
+article p {
+  font-size: .95em;
+  line-height: 1.6em;
+  text-align: justify;
+  text-indent: 30px;
+  padding: 15px 0px;
+}
+article img.img-flex {
+  width: 100%;
+}
+article img#bugdroid {
+  display: block;
+  margin: auto;
+}
+
+/*
+DIV COM O VÍDEO DO YOUTUBE
+*/
+div.video {
+  position: relative;
+  background-color: var(--cor5);
+  margin: 0px -17px 20px -17px;
+  padding: 30%;
+}
+
+div.video iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+/*
+CONTEÚDO PERIFÉRICO (NOTÍCIA EXTRA)
+*/
+aside {
+  background-color: var(--cor2);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.411);
+}
+aside h3 {
+  background-color: var(--cor4);
+  color: white;
+  font-weight: normal;
+  font-size: 1.1em;
+  margin: -10px;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+aside p {
+
+}
+aside ul {
+  list-style-position: inside;
+  columns: 2;
+}
+aside ul > li {
+  list-style-type: '\2714';
+}
+
+/*
+RODAPÉ
+*/
+footer {
+background-color: var(--cor5);
+color: white;
+text-align: center;
+font-size: .9em;
+padding: 10px;
+}
+
