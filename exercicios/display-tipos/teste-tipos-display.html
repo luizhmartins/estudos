@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testando os tipos de Display</title>
+  <style>
+    ul#block li {
+      display: block; /* estpa declarado como display: block, mas por padrão está tag <li> ja vem como um bloco (block-level)*/
+      list-style-type: none;
+      background-color: aqua;
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+    ul#inline li {
+      display: inline; /* Ao declarar o elemento com display: inline, o elementos da lista passam de block-level para inline-level, contendo apenas o tamanho exato de altura e largura do elemento*/
+      list-style-type: none;
+      background-color: rgb(255, 115, 0);
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      margin: px;
+    }
+    ul#inline-block li {
+      display: inline-block; /* Já o inline-block deixa os elementos com as caracteristicas dos dois modelos, ou seja, ele fica em linha como um elemento inline-level mas também possuem as configurações de um elemento block-level como por exemplo definir uma altura e uma largura para o bloco*/
+      list-style-type: none;
+      background-color: rgb(0, 255, 21);
+      text-align: center;
+      width: 100px; /* Não funciona em um elemento inline-level*/
+      height: 100px;/* Não funciona em um elemento inline-level*/
+      margin: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Testando diferentes tipos de displays</h1>
+  <ul id="block">
+    <li>caixa</li>
+    <li>caixa</li>
+    <li>caixa</li>
+  </ul>
+  <ul id="inline">
+    <li>caixa</li>
+    <li>caixa</li>
+    <li>caixa</li>
+  </ul>
+  <ul id="inline-block">
+    <li>caixa</li>
+    <li>caixa</li>
+    <li>caixa</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Qual a diferença entre positions: fixed, relative, absolute e static?
+
+O position fixed: irá fixar a posição do elemento na coordenada que você definir. A medida que a página é rolada, o elemento continua fixo na posição que você definiu e o conteúdo da página rola normalmente. Geralmente é usado para fixar elementos como cabeçalhos ou sidebars.
+
+O position relative: posiciona o elemento em relação a si mesmo. Ou seja, o ponto zero será o canto superior esquerdo, e ele começará a contar a partir dali. Todos os positions precisam de um ponto para iniciar o cálculo da coordenada para assim posicionar o elemento na tela. Ao contrário do que muitos acham, esse ponto não é o ponto central do elemento, o ponto base é o canto superior esquerdo do elemento. A partir deste canto, o browser irá calcular a coordenada que você definiu e irá posicionar o elemento no viewport.
+
+O Position Absolute: é um tanto diferente do Relative. Enquanto o elemento com Position Relative utiliza seu próprio canto para referenciar sua posição, o elemento com Position Absolute se utiliza do ponto superior esquerdo de outros elementos. Estes elementos são os parentes dele do elemento com position absolute. Mais especificamente o pai.
+
+O Position Static: é o valor padrão para todos os elementos de uma página - todos são inicializados como 'static'. Não há complicação aqui, simplesmente significa que o elemento vai seguir o fluxo da página normalmente. A única boa razão para atribuir explicitamente o valor 'position: static' de um elemento é forçar a remoção de um posicionamento previamente definido.

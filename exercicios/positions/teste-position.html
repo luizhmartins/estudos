@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testando diferentes positions</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    div#um {
+      background-color: aqua;
+      width: 500px;
+      height: 100px;
+      margin: 40px 10px;
+    }
+    div#dois {
+      background-color: rgb(255, 115, 0);
+      width: 500px;
+      height: 100px;
+      margin: 40px 10px;
+    }
+    div#tres {
+      background-color: rgb(9, 255, 0);
+      width: 500px;
+      height: 100px;
+      margin: 40px 10px;
+    }
+    div#quatro {
+      position: relative;
+      background-color: rgb(0, 38, 255);
+      width: 500px;
+      height: 100px;
+      margin: 40px 10px;
+    }
+    #fixed {
+      position: fixed; /* O elemento ficará fixo na tela, ao declarar este elemento como fixed sua posição terá como relação o topo esquerdo da página web, assim como a posição absoluta*/
+      top: 20%;
+      left: 20%;
+    }
+    #static {
+      position: static; /* Configuração default dos elementos contídos no navegador*/
+      left: 40%;
+      top: 40%
+    }
+    #relative {
+      position: relative; /* Posição relativa a posição inicial do elemento, ou seja, ao alterar os parametros de top, right, bottom e left serão relativos a posição em que o elemento estava inicialmente*/
+      left: 40%;
+      top: 40%
+    }
+    #absolute {
+      position: absolute; /* Neste exemplo a div pai deste elemento está como relative, por isso o conteudo fica dentro da caixa azul no exemplo, se a div não tiver posição relativa o conteúdo ficará no topo da página web*/
+      left: 40%;
+      top: 0%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Testando diferentes tipos de positions</h1>
+    <div id="um">
+      <h2 id="fixed">fixed</h2>
+    </div>
+    <div id="dois">
+      <h2 id="static">static</h2>
+    </div>
+    <div id="tres">
+      <h2 id="relative">relative</h2>
+    </div>
+    <div id="quatro">
+      <h2 id="absolute">absolute</h2>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio quos eius quis? Temporibus sint sit doloribus in laborum expedita optio nam, numquam rem nisi porro magnam dicta fugiat rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nobis tempore facilis possimus deserunt incidunt est iste eligendi labore exercitationem ea optio animi tenetur qui recusandae, modi reiciendis mollitia fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquam recusandae quibusdam explicabo architecto est iusto quaerat fugiat harum amet impedit sunt quo eos, tempora magni inventore, assumenda nobis odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio quos eius quis? Temporibus sint sit doloribus in laborum expedita optio nam, numquam rem nisi porro magnam dicta fugiat rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nobis tempore facilis possimus deserunt incidunt est iste eligendi labore exercitationem ea optio animi tenetur qui recusandae, modi reiciendis mollitia fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquam recusandae quibusdam explicabo architecto est iusto quaerat fugiat harum amet impedit sunt quo eos, tempora magni inventore, assumenda nobis odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio quos eius quis? Temporibus sint sit doloribus in laborum expedita optio nam, numquam rem nisi porro magnam dicta fugiat rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nobis tempore facilis possimus deserunt incidunt est iste eligendi labore exercitationem ea optio animi tenetur qui recusandae, modi reiciendis mollitia fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquam recusandae quibusdam explicabo architecto est iusto quaerat fugiat harum amet impedit sunt quo eos, tempora magni inventore, assumenda nobis odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio quos eius quis? Temporibus sint sit doloribus in laborum expedita optio nam, numquam rem nisi porro magnam dicta fugiat rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nobis tempore facilis possimus deserunt incidunt est iste eligendi labore exercitationem ea optio animi tenetur qui recusandae, modi reiciendis mollitia fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquam recusandae quibusdam explicabo architecto est iusto quaerat fugiat harum amet impedit sunt quo eos, tempora magni inventore, assumenda nobis odio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio quos eius quis? Temporibus sint sit doloribus in laborum expedita optio nam, numquam rem nisi porro magnam dicta fugiat rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nobis tempore facilis possimus deserunt incidunt est iste eligendi labore exercitationem ea optio animi tenetur qui recusandae, modi reiciendis mollitia fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquam recusandae quibusdam explicabo architecto est iusto quaerat fugiat harum amet impedit sunt quo eos, tempora magni inventore, assumenda nobis odio!</p>
+
+</body>
+</html>
