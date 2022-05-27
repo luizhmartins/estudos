@@ -1,7 +1,7 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@font-face {
-  font-family: 'idroid-font';
+@charset "UTF-8"; /* Dicionario de caracteres para o Brasil*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Import do google fontes*/
+@font-face { /* Fonte importada do computador*/
+  font-family: 'idroid-font'; /* Nome da fonte (escolha pórpria)*/
   src: url(../fontes/idroid.otf)format('opentype');
 }
 
