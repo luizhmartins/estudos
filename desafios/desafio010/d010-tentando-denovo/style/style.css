@@ -1,9 +1,24 @@
 @charset "UTF-8"; /* Dicionario de caracteres para o Brasil*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Import do google fontes*/
-@font-face { /* Fonte importada do computador*/
-  font-family: 'idroid-font'; /* Nome da fonte (escolha pórpria)*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'idroid-font';
   src: url(../fontes/idroid.otf)format('opentype');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: 'bebas', cursive;
+}
+
+/*
+  Tipos de format()
+  - opentype (otf)
+  - truetype (ttf)
+  - embedded-aat (Aplle Advanced Typography)
+  - svg
+*/
 
 *{
   padding: 0px;

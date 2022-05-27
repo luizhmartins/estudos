@@ -5,23 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mídias em HTML5</title>
+  <style>
+    body {
+
+      text-shadow: 1px 1px 1px black;
+      box-shadow: 1px 1px 1px black;
+
+    }
+  </style>
 </head>
 <body>
   <h1>Imagem dinâmica</h1>
   <p>Tente abrir esse site me vários dispositivos diferentes ou sisplesmente aumente e diminua o tamanho do seu navegador</p>
+
   <picture>
     <source media="(max-width: 750px)" srcset="imagens/imagem-pequena.jpg" type="image/jpg">
     <source media="(max-width: 1050px)" srcset="imagens/imagem-media.jpg" type="image/jpg">
     <img src="imagens/imagem-grande.jpg" alt="Imagem flexivel">
   </picture>
+
   <h1>Reproduzindo audio</h1>
+
   <p>Vamos aprender a reproduzir audio utilizando HTML5</p>
   <audio src="midia/audio1.mp3" controls></audio>
+
   <h2>Inserindo video da um repositório local (meu computador)</h2>
   <video src="midia/video.mp4" poster="imagens/imagem-pequena.jpg" width="400" controls></video>
 
   <h2>Inserindo video com repositório do youtube<h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </body>
 </html>
