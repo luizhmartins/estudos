@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Definindo um posicionamento fixo na imagem de fundo</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      height: 100vh;
+      /*
+      background-color: black;
+      background-image: url(imagens/wallpaper002.jpg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      */
+      /* Shorthand
+      color > image > position > repeat >[size (não está funcionando ainda)] > attachment
+      */
+      background: black url(imagens/wallpaper002.jpg) top center no-repeat fixed;
+      background-size: cover;
+    }
+    main {
+      background-color: white;
+      width: 350px;
+      padding: 10px;
+      margin: auto;
+      border: 1px solid black;
+      border-radius: 20px;
+
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Definindo um posicionamento fixo na imagem de fundo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo aspernatur quis maxime hic doloribus repellendus exercitationem. Maxime harum repudiandae tempore illo nam eos architecto molestiae aperiam, ea neque. Quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iure harum in ipsam quaerat quibusdam, temporibus architecto? Quisquam adipisci enim eum ex doloribus, consectetur, incidunt vitae, non nobis officia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, alias! Quos, sapiente debitis! Quibusdam quaerat inventore exercitationem nobis totam nam delectus adipisci? Id voluptates voluptate sit quam, incidunt eius possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis eum error sunt eligendi ratione adipisci impedit! Quibusdam mollitia, eligendi ratione temporibus dolore tenetur? Id dolore, necessitatibus deleniti cupiditate facere magnam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo aspernatur quis maxime hic doloribus repellendus exercitationem. Maxime harum repudiandae tempore illo nam eos architecto molestiae aperiam, ea neque. Quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iure harum in ipsam quaerat quibusdam, temporibus architecto? Quisquam adipisci enim eum ex doloribus, consectetur, incidunt vitae, non nobis officia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, alias! Quos, sapiente debitis! Quibusdam quaerat inventore exercitationem nobis totam nam delectus adipisci? Id voluptates voluptate sit quam, incidunt eius possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis eum error sunt eligendi ratione adipisci impedit! Quibusdam mollitia, eligendi ratione temporibus dolore tenetur? Id dolore, necessitatibus deleniti cupiditate facere magnam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo aspernatur quis maxime hic doloribus repellendus exercitationem. Maxime harum repudiandae tempore illo nam eos architecto molestiae aperiam, ea neque. Quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iure harum in ipsam quaerat quibusdam, temporibus architecto? Quisquam adipisci enim eum ex doloribus, consectetur, incidunt vitae, non nobis officia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, alias! Quos, sapiente debitis! Quibusdam quaerat inventore exercitationem nobis totam nam delectus adipisci? Id voluptates voluptate sit quam, incidunt eius possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis eum error sunt eligendi ratione adipisci impedit! Quibusdam mollitia, eligendi ratione temporibus dolore tenetur? Id dolore, necessitatibus deleniti cupiditate facere magnam!</p>
+  </main>
+</body>
+</html>
