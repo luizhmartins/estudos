@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    .azul {
+      background-color: blue;
+    }
+    .branco {
+      background-color: white;
+    }
+    .preto {
+      background-color: rgb(236, 23, 23);
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <colgroup>
+      <col class="azul">
+      <col class="branco">
+      <col class="preto">
+    </colgroup>
+    <caption>Testando colgroup</caption>
+    <thead></thead>
+    <tbody>
+      <tr>
+        <th>Nome</th>
+        <th>Sexo</th>
+        <th>Idade</th>
+      </tr>
+      <tr>
+        <td>Luiz</td>
+        <td>Masculino</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>João</td>
+        <td>Masculino</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Karol</td>
+        <td>Feminino</td>
+        <td>20</td>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+</body>
+</html>
