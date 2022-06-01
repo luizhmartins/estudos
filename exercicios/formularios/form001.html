@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiro formulário</title>
+</head>
+<body>
+  <form>
+    <!--
+      Input de dados do tipos: text, date e email
+    -->
+  <form>
+    <fieldset>
+      <legend>Informações do cliente</legend>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome">
+      <label for="sobrenome">Sobrenome</label>
+      <input type="text" id="sobrenome">
+      <label for="nasc">Data de Nascimento</label>
+      <input type="date" id="nasc">
+      <label for="email">E-mail</label>
+      <input type="email" id="email">
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone">
+    </fieldset>
+  </form>
+
+    <!--
+      Input do tipo radio
+    -->
+
+    <fieldset>
+      <legend>Tamanho do suco</legend>
+      <p>
+        <input type="radio" name="tamanho" id="tam_1" value="pequeno" />
+        <label for="tam_1">Pequeno</label>
+      </p>
+      <p>
+        <input type="radio" name="tamanho" id="tam_2" value="medio" />
+        <label for="tam_2">Medio</label>
+      </p>
+      <p>
+        <input type="radio" name="tamanho" id="tam_3" value="grande" />
+        <label for="tam_3">Grande</label>
+      </p>
+    </fieldset>
+  
+  <!--
+    Input do tipo checkbox
+  -->
+  
+    <fieldset>
+      <legend>Técnologias que você conhece</legend>
+      <label for="html">HTML5</label>
+      <input type="checkbox" id="html">
+      <label for="css">CSS3</label>
+      <input type="checkbox" id="css">
+      <label for="javascript">JavaScript</label>
+      <input type="checkbox" id="javascript">
+      <label for="java">Java</label>
+      <input type="checkbox" id="java">
+      <label for="csharp">C#</label>
+      <input type="checkbox" id="csharp">
+      <label for="python">Python</label>
+      <input type="checkbox" id="python">
+    </fieldset>
+  
+  <!--
+    Inserindo caixa de texto no formulário
+  -->
+  
+    <p>Escreva um pouco sobre você</p>
+    <textarea name="box-text" id="box-text" cols="30" rows="10"></textarea>
+  
+  <!--
+    Inserindo campo de opções para selecionar
+  -->
+    <fieldset>
+      <legend>Escolha o turno que você prefere</legend>
+      <select>
+        <option value="">Manhã</option>
+        <option value="">Tarde</option>
+        <option value="">Noite</option>
+      </select>
+    </fieldset>
+
+    <input type="submit" value="Enviar formulário">
+
+  </form>
+</body>
+</html>
