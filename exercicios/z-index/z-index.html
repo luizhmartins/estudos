@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testando a propriedade z-index</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: aliceblue;
+      position: fixed;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      border: 1px solid black;
+      box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.377);
+      box-sizing: border-box;
+      padding: 5px;
+    }
+    .q1 {
+      background-color: aqua;
+    }
+    .q2 {
+      background-color: brown;
+      left: 50px;
+      top: 50px;
+      /* Testando z-index positivo
+      z-index: 1;
+      */
+    }
+    .q3 {
+      background-color: blueviolet;
+      left: 100px;
+      top: 100px;
+      /* Testando z-index negativo. Não recomendado utilizar valores de z-index negativo.
+      z-index: -1;
+      */
+    }
+    /*
+    Todos os elementos já vem por padrão com o z-index como auto, se definirmos o z-index de um determinado elemento para 1, este elemento irá sobrepor todos os elementos que estão com o valor padão de z-index (auto) ou inferiores a 1.
+    Caso o valor de z-index for negativo, este elemento ficará posionado atrás dos demais elementos que possuem o valor padrão ou superior ao valor negativo definido.
+    Obs.: Não é recomendado utilizar valores negativos nokz-index dos elementos.
+    */
+    
+  </style>
+</head>
+<body>
+  <div class="q1">Quadrado 1</div>
+  <div class="q2">Quadrado 2</div>
+  <div class="q3">Quadrado 3</div>
+</body>
+</html>
