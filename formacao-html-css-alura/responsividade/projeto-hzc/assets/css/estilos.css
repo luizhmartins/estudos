@@ -35,7 +35,6 @@ body {
 .menu__lateral {
   display: flex;
   flex-direction: column;
-
 }
 .menu__lateral-logo {
   align-self: center;
