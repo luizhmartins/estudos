@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icones';
+  src: url(../font/icones.ttf) format('truetype');
+}
+
+body {
+  background-color: #1D232A;
+  font-family: 'Open Sans','icones', sans-serif;
+  color: #FFFFFF;
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15191C;
+  padding: 8px 16px;
+  box-sizing: 0 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.cabecalho__menu i::before {
+  content: "\e904";
+  font-size: 24px;
+}
+
+.cabecalho__logo {
+  width: 40px;
+}
+
+.cabecalho__notificacao i::before {
+  content: "\e906";
+  font-size: 24px;
+}
+
+.menu__lateral {
+  display: flex;
+  flex-direction: column;
+
+}
+.menu__lateral-logo {
+  align-self: center;
+}
