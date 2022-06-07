@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testando o Flex Container para inserir ícones com Pseudo-elementos</title>
+  <style>
+    @font-face {
+      font-family: 'icones';
+      src: url(font/icones.ttf);
+    }
+    body {
+      background-color: #272626;
+    }
+    h1 {
+      color: #FFFFFF;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      padding: 8px;
+      border-radius: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #363434;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      height: 100px;
+    }
+
+    /*Teste sem flex container*/
+
+    .menu__lateral--semflex {
+      font-size: 20px;
+      padding-left: 64px;
+    }
+    .menu__lateral--semflex::before {
+      content: '\e900';
+      font-family: 'icones';
+      font-size: 40px;
+    }
+
+
+    /*Teste com flex container*/
+    .menu__lateral--comflex {
+      display: flex;
+      font-size: 20px;
+      padding-left: 64px;
+      align-items: center;
+
+    }
+    .menu__lateral--comflex::before {
+      content: '\e900';
+      font-family: 'icones';
+      font-size: 40px;
+      position: absolute;
+      left: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Teste sem Flex Container</h1>
+  <nav>
+    <a href="#" class="menu__lateral--semflex">Inicio</a>
+    <a href="#" class="menu__lateral--semflex">Picos</a>
+    <a href="#" class="menu__lateral--semflex">Integrantes</a>
+    <a href="#" class="menu__lateral--semflex">Camisas</a>
+    <a href="#" class="menu__lateral--semflex">Pinturas</a>
+  </nav>
+  <h1>Teste com Flex Container</h1>
+  <nav>
+    <a href="#" class="menu__lateral--comflex">Inicio</a>
+    <a href="#" class="menu__lateral--comflex">Picos</a>
+    <a href="#" class="menu__lateral--comflex">Integrantes</a>
+    <a href="#" class="menu__lateral--comflex">Camisas</a>
+    <a href="#" class="menu__lateral--comflex">Pinturas</a>
+  </nav>
+</body>
+</html>
