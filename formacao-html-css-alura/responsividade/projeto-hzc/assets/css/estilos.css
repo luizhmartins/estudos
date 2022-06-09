@@ -100,10 +100,16 @@ body {
 
 .principal {
   padding: 24px 16px;
+  display: grid;
+  gap: 16px;
 
 }
 .titulo__pagina {
   font-size: 1.5rem;
+  font-weight: 700;
+}
+.secao__titulo {
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .cartao {
@@ -156,6 +162,9 @@ body {
   border-radius: 10px;
   font-size: 0.9rem;
 }
+.cartao__botao--play {
+  justify-self: flex-end;
+}
 .cartao__botao--play::before {
   content: "\e90b";
   font-size: 24px;
@@ -167,4 +176,9 @@ body {
 
 .cartao__botao--destaque::before {
   margin-right: 8px;
+}
+
+.secao {
+  display: grid;
+  gap: 16px;
 }
