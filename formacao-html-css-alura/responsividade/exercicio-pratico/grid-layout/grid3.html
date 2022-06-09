@@ -21,6 +21,12 @@
     gap: 16px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "direita-baixo meio meio lateral"
+      "direita-baixo meio meio lateral"
+      "direita-cima meio meio lateral"
+      "cabecalho cabecalho cabecalho cabecalho"
+    ;
   }
 
   .cabecalho {
@@ -28,7 +34,7 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    grid-column: span 4;
+    grid-area: cabecalho;
   }
 
   .lateral {
@@ -36,7 +42,7 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    grid-row: span 3;
+    grid-area: lateral;
   }
 
   .meio {
@@ -44,8 +50,7 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    grid-column: span 2;
-    grid-row: span 3;
+    grid-area: meio;
   }
 
   .direita-cima {
@@ -53,6 +58,7 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
+    grid-area: direita-cima;
   }
 
   .direita-baixo {
@@ -60,7 +66,7 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    grid-row: span 2;
+    grid-area: direita-baixo;
   }
   </style>
 </head>
