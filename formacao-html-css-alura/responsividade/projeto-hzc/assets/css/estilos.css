@@ -40,7 +40,7 @@ body {
   height: 100vh;
 
   position: absolute;
-  /*left: -100vw;*/
+  left: -100vw;
   transition: .25s;
 }
 
@@ -55,6 +55,12 @@ body {
   padding: 16px;
 }
 
+.menu__lateral-ativo {
+  color: #FFFFFF;
+  border-left: 8px solid #FFFFFF;
+  padding-left: 56px;
+}
+
 .menu__lateral-link {
   height: 64px;
   color: #95999C;
@@ -62,14 +68,6 @@ body {
   display: flex;
   align-items: center;
 }
-
-.menu__lateral-ativo {
-  color: #FFFFFF;
-  border-left: 8px solid #FFFFFF;
-  padding-left: 56px;
-
-}
-
 .menu__lateral-link::before {
   content:"";
   width: 24px;
@@ -78,7 +76,6 @@ body {
   position: absolute;
   left: 24px;
 }
-
 .menu__lateral-link--inicio::before {
   content: "\e902";
 }

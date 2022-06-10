@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste position-abasolute</title>
+  <style>
+    * {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      background-color: green;
+      height: 200px;
+    }
+    nav {
+      background-color: grey;
+
+    }
+    li {
+      padding-bottom: 10px;
+      padding-left: 64px;
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+    }
+    .l1::before{
+      content: "alal";
+      position: absolute;
+      left: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cabeçalho</h1>
+  </header>
+  <main>
+    <h2>Principal</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quis aperiam ducimus blanditiis, laudantium dolor ipsa eveniet accusamus explicabo vero dolorum quia, vel, excepturi cum quisquam voluptate maxime corporis labore.</p>
+  </main>
+  <nav>
+    <ul>
+      <li>conteudo</li>
+      <li>conteudo</li>
+      <li class="l1">conteudo</li>
+      <li>conteudo</li>
+      <li>conteudo</li>
+    </ul>
+  </nav>
+</body>
+</html>
