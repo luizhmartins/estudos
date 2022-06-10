@@ -40,7 +40,7 @@ body {
   height: 100vh;
 
   position: absolute;
-  left: -100vw;
+  /*left: -100vw;*/
   transition: .25s;
 }
 
