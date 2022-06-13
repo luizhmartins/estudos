@@ -5,22 +5,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <title>Alura Plus - Home</title>
 </head>
 <body>
   <main class="principal">
     <section class="chamada">
-      <img src="img/Background.png" alt="Imagem de Fundo Alura Plus">
       <div class="chamada__conteudo">
-        <h1>
+        <h1 class="chamada__titulo">
           Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.
         </h1>
-        <img src="img/Combo.png" alt="Combo Alura Plus">
-        <a href="#">Assine por 12x de R$ 120,00*</a>
-        <a href="#">Assinar somente o Alura+</a>
-        <p>variar caso a assinatura seja feita em outros planos.</p>
+        <img src="img/Combo.png" alt="Combo Alura Plus" class="chamada__logoCombo">
+        <a href="#" class="chamada__botao chamada__botao--destaque">Assine por 12x de R$ 120,00*</a>
+        <a href="#" class="chamada__botao">Assinar somente o Alura+</a>
+        <p class="chamada__textoAviso">variar caso a assinatura seja feita em outros planos.</p>
+      </div>
+    </section>
+    <section class="beneficios container">
+      <div class="beneficios__imagem"><img src="img/Plataformas.png" alt="" ></div>
+      <div class="beneficios__conteudo">
+        <h2 class="beneficios__titulo">Assista do seu jeito</h2>
+        <p class="beneficios__texto">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros
+          aparelhos. Nossa seleção de cursos não para de crescer.</p>
+      </div>
+    </section>
+    <section class="beneficios container">
+      <div class="beneficios__conteudo">
+        <p class="beneficios__texto">Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da
+          tecnologia e aprender inglês ou espanhol, onde e como quiser.</p>
+          <a href="#" class="chamada__botao chamada__botao--destaque beneficios__botao">Assineo combo+</a>
+        </div>
+        <div class="beneficios__imagem"><img src="img/Telas.png" alt="" ></div>
+    </section>
+    <section class="beneficios container">
+      <div class="beneficios__imagem"><img src="img/Notebook.png" alt="" ></div>
+      <div class="beneficios__conteudo">
+        <h2 class="beneficios__titulo">Baixe seus cursos</h2>
+        <p class="beneficios__texto">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com
+          você, até mesmo sem internet.</p>
+      </div>
+    </section>
+    <section class="secao__dispositivos container">
+      <h2 class="secao__dispositivos--titulo">Disponível nos seus dispositivos favoritos</h2>
+      <div class="divisao__painel">
+        <picture class="painel__imagem painel__imagem--tv">
+          <img src="img/tv.png" alt="">
+          <figcaption class="painel__legenda">TV</figcaption>
+        </picture>
+        <picture class="painel__imagem painel__imagem--computador">
+          <img src="img/computador.png" alt="">
+          <figcaption class="painel__legenda">Computadores</figcaption>
+        </picture>
+        <picture class="painel__imagem painel__imagem--celular">
+          <img src="img/celular.png" alt="">
+          <figcaption class="painel__legenda">Celulares e Tablets</figcaption>
+        </picture>
       </div>
     </section>
   </main>
+  <footer>
+
+  </footer>
 </body>
 </html>

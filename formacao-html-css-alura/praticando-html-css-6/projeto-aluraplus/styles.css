@@ -21,3 +21,109 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  padding: 100px 50px;
+}
+.chamada {
+  background-image: url(img/Background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.chamada__conteudo {
+  width: 600px;
+  padding: 3px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.chamada__titulo {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.chamada__logoCombo {
+  width: 348px;
+  margin-bottom: 10px;
+}
+.chamada__botao {
+  width: 500px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.chamada__botao--destaque {
+  background-color: #167BF7;
+  border: none;
+}
+.chamada_textoAviso {
+  font-size: 12px;
+  font-weight: normal;
+}
+.beneficios {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.beneficios__imagem {
+  width: 500px;
+}
+.beneficios__titulo {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.beneficios__texto {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.beneficios__conteudo {
+  width: 600px;
+}
+.beneficios__botao {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 10px;
+  width: 162px;
+}
+.secao__dispositivos {
+
+}
+.secao__dispositivos--titulo {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.divisao__painel {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.painel__imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.painel__imagem--tv {
+
+}
+.painel__imagem--computador {
+  
+}
+.painel__imagem--celular {
+  
+}
+.painel__legenda {
+  font-size: 32px;
+}
