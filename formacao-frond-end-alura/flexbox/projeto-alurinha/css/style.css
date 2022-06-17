@@ -12,16 +12,24 @@ body {
 	background-color: #FFF;
 	padding: 20px 0;
 }
+.cabecalhoPrincipal .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
 .cabecalhoPrincipal-titulo {
 	font-weight: bold;
 	font-size: 2em;
-	margin-bottom: 20px;
 }
 
 .cabecalhoPrincipal-titulo a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.cabecalhoPrincipal-nav {
+	display: flex;
 }
 
 .cabecalhoPrincipal-nav-link {
@@ -103,8 +111,14 @@ body {
 	padding-top: 20px;
 }
 
-.rodapePrincipal .subtitulo {
-	color: #FFF;
+.rodapePrincipal-patrocinadores .container {
+	display: flex;
+}
+.rodapePrincipal-navMap-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 255px;
 }
 
 .rodapePrincipal-navMap-link {
@@ -115,6 +129,25 @@ body {
 
 .rodapePrincipal-navMap-link {
 	font-size: .9em;
+}
+.rodapePrincipal-patrocinadores-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70%;
+	margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+	width: 20%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+	display: flex;
+}
+
+.rodapePrincipal .subtitulo {
+	color: #FFF;
 }
 
 .navmap-list-title {
@@ -180,15 +213,16 @@ body {
 .videoSobre {
 	background-color: #5E9EDC;
 	padding: 25px 0;
-
 }
 
 .videoSobre-video {
 	max-width: 100%;
+	flex-grow: 1;
 }
 
 .videoSobre .container {
 	color: #FFF;
+	display: flex;
 }
 
 .videoSobre-sobre-title {
@@ -199,6 +233,14 @@ body {
 .videoSobre-sobre {
 	font-size: 1.3em;
 	line-height: 2;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 3;
+}
+
+.videoSobre-sobre-list {
+	flex-grow: 1;
 }
 
 .videoSobre-button {
