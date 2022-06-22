@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var n1 = 1545.5
+
+    /*
+      .toFixed() 
+        Define quantas casas decimais terá o número
+    */
+    document.write(`O número da var n1 é <strong>${n1.toFixed(3)}</strong><br>`) 
+
+     /*
+      .replace('.',',')
+        Faz a conversão do ponto por virgula na separação decimal
+    */
+    document.write(`O número da var n1 é <strong>${n1.toFixed(2).replace('.', ',')}</strong><br>`)
+
+    /*
+      .toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+        Este comando transformará o número em um valor em dinheiro, neste caso foi adicionado a sigla BRL portanto o valor ficou em reais, mas pode utilizar siglas de outras moedas, conforme os exemplos abaixo:
+    */
+    document.write(`O número da var n1 é <strong>${n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</strong><br>`)
+    document.write(`O número da var n1 é <strong>${n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}</strong><br>`)
+    document.write(`O número da var n1 é <strong>${n1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})}</strong><br>`)
+
+  </script>
+</body>
+</html>
