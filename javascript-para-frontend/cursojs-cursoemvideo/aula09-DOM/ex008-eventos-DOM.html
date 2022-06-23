@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos com o DOM</title>
+  <style>
+    .area {
+      background-color: rgb(52, 168, 52);
+      color: white;
+      cursor: pointer;
+      font: normal 1rem Arial;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="area"
+    onmouseenter="entrar()"
+    onmouseout="sair()"
+    onclick="clicar()">
+    interaja...
+  </div>
+
+  <script>
+    /*
+      EVENTOS EM JS
+        mouseenter ==> Dispara o evento quando o mouse entrar no elemento
+        mousemove ==> Dispara o evento enquanto o mouse estiver se movendo sobre o elemento.
+        mouseout ==> Dispara o evento quando o mouse sair de cima do elemento.
+        mousedown ==> Dispara o evento quando o clicar e segurar o click sobre o elemento
+        mouseup ==> Dispara o evento quando o click do mouse for solto.
+        click ==> Dispara o evento quando o ocorre um click simples do mouse sobre o elemento
+    */
+    function entrar(){
+      var area = document.querySelector('.area')
+      area.innerText = 'Entrou'
+    }
+    function sair(){
+      var area = document.querySelector('.area')
+      area.innerText = 'Saiu'
+    }
+    function clicar(){
+      var area = document.querySelector('.area')
+      area.style.background='blue'
+      area.innerText = 'Clicou'
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos com o DOM</title>
+  <style>
+    .area {
+      background-color: green;
+      color: white;
+      cursor: pointer;
+      font: normal 1rem Arial;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="area">
+    interaja...
+  </div>
+
+  <script>
+    /*
+      EVENTOS EM JS
+        Também é possível, e até mesmo melhor, colocar toda a parte de eventos da página direto no código JavaScript através de listenners.
+        Isso desocupa bastante espaço do documento HTML porque não precisamos mais colocar as chamadas das funções nas Tags.
+    */
+    var area = window.document.querySelector('.area')
+    area.addEventListener('mouseenter', entrar)
+    area.addEventListener('mouseout', sair)
+    area.addEventListener('click', clicar)
+
+    function entrar(){
+      area.innerText = 'Entrou'
+      area.style.background='red'
+    }
+    function sair(){
+      area.innerText = 'Saiu'
+      area.style.background='green'
+    }
+    function clicar(){
+      area.innerText = 'Clicou'
+      area.style.background='blue'
+    }
+  </script>
+</body>
+</html>

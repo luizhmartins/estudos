@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos com DOM...</title>
+  <style>
+    body {
+      font: normal 1rem Arial;
+      background-color: rgb(75, 126, 172);
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titulo">Aprendendo a usar o DOM</h1>
+  <p class="texto">Aqui vai o resultado</p>
+  <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+  <div class="caixa">Clique em mim</div>
+
+  <script>
+    /*
+      Pegando o elemento pela TAG HTML
+      Obs.: Como o comando está no plural (Elements) foi necessário colocar o número da Tag que queremos pegar, porque eneste exemplo existem duas Tags "p", a contagem começa no 0.
+    */
+
+    var p1 = document.getElementsByTagName('p') [1]
+    window.document.write(p1.innerText + '<br>') // Escreve no documento HTML o texto que esta dentro da variável p1.
+    window.document.write(p1.innerHTML) // Escreve no documento HTML o texto que está dentro da variável p1, porém com a formatação das Tags HTML filhas que o p1 possui.
+
+    /*
+     Pegando o elemento pelo ID 
+    */
+    var titulo = document.getElementById('titulo')
+    titulo.style.color = 'black' // Muda o estilo do Elemento h1 com id = 'titulo'
+    
+    /*
+      Pegando o elemento pela CLASS
+    */
+    var texto = document.getElementsByClassName('texto') [0]
+    texto.innerText = 'Mudando o conteudo do texto' // Mudei o texto que estava dentro da variável texto
+    texto.innerText += ' Texto extra concatenado' // Adicionei um texto extra na variável texto, utilizando a concatenação
+
+    /*
+      Pegando elementos por SELETORES utilizando o querySelector()
+        O querySelector pega os elementos através de classes e ids.
+        - Pegando pela classe: querySelector('.class')
+        - Pegando pelo id('#id')
+    */
+    var caixa = document.querySelector('.caixa')
+    caixa.style.background = 'green'
+  </script>
+</body>
+</html>
