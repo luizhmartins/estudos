@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background: #0575E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section button {
+  font-size: 1rem;
+  font-family: Arial;
+  font-weight: bold;
+  
+  color: white;
+  background-color: transparent;
+  box-shadow: none;
+  border: 2px solid white;
+  
+  padding: .6rem 2rem;
+  margin: 10px;
+  transition: all 260ms ease;
+}
+.section button:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0 8px 22px rgba(0,0,0,.18);
+}
+
+.box {
+  width: 160px;
+  height: 160px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 4rem;
+  
+  background-color: white;
+  box-shadow: 0 8px 22px rgba(0,0,0,.18);
+}
+.box:after {
+  content: "no class";
+}
+
+
+.box.class{
+  background-color: red;
+}
+.box.class:after {
+  content: "classy";
+  
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: white;
+}
