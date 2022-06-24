@@ -1,23 +1,51 @@
-var hora = new Date()
+var data = new Date()
+var anoAtual = data.getFullYear()
+var res = window.document.querySelector('#res')
 
-function verificarHora() {
-  var img = window.document.querySelector('#imagem')
-  var msg = window.document.querySelector('#msg')
-  var fundo = window.document.querySelector('#corpo')
-  var horaAtual = hora.getHours()
-  //var horaAtual = 21
+function verificar() {
+  var txtAno = window.document.querySelector('#txtAno')
+  var anoNasc = Number(txtAno.value)
+  var sexo = window.document.getElementsByName('radsex')
 
-  msg.innerHTML = `<p>Agora são ${horaAtual} horas</p>`
-  if (horaAtual < 12) {
-    fundo.style.background='#d99a51'
-    img.src='manha.png'
+  if (txtAno.value.length == 0 || anoNasc > anoAtual) {
+    res.innerHTML = `Informações inválidas. Tente novamente!`
+  }else{
+    var idade = anoAtual - anoNasc
+    var genero = ''
+    var img = window.document.createElement('img')
 
-  }else if (horaAtual <18) {
-    fundo.style.background='#8c575d'
-    img.src='tarde.png'
+    if (sexo[0].checked) {
+      //mulher
+      genero = 'mulher'
 
-  }else {
-    fundo.style.background='#3e3456'
-    img.src='noite.png'
+      if (idade < 16) {
+        //criança
+        img.setAttribute('src', 'crianca-f.png')
+      }else if (idade <65) {
+        //jovem
+        img.setAttribute('src', 'jovem-f.png')
+      }else {
+        //idoso
+        img.setAttribute('src', 'idoso-f.png')
+      }
+    }else{
+      //homem
+      genero = 'homem'
+
+      if (idade < 16) {
+        //criança
+        img.setAttribute('src', 'crianca-m.png')
+      }else if (idade <65) {
+        //jovem
+        img.setAttribute('src', 'jovem-m.png')
+      }else {
+        //idoso
+        img.setAttribute('src', 'idoso-m.png')
+      }
+    }
+
+    res.innerHTML = `Detectamos um(a) ${genero} de ${idade} anos`
+    res.appendChild(img)
+    img.style.paddingTop='15px'
   }
 }
