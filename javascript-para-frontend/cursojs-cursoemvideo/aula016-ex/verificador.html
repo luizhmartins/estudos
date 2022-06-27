@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Modelo de página para os exercícios</title>
+</head>
+<body>
+  <header>
+    <h1>Título</h1>
+  </header>
+  <section>
+    <div>
+      número de 1 a 100
+      <input type="number" name="txtNum" id="txtNum">
+      <input type="button" value="Adicionar" onclick="adicionar()">
+    </div>
+    <div id="res">
+    </div>
+  </section>
+  <footer>
+    <p>&copy; LuizMartins</p>
+
+  <script>
+    var lista = []
+    var res = window.document.querySelector('#res')
+    function adicionar() {
+      var txtNum = window.document.querySelector('#txtNum')
+      var num = Number(txtNum.value)
+      if (txtNum.value.length == 0 || num > 100 || num < 0) {
+        alert('Informações incorretas. Tente novamente!')
+      }else {
+        lista.push(num)
+        res.innerHTML += `<p>Valor ${num} adicionado</p>`
+      }
+    }
+  </script>
+</body>
+</html>
