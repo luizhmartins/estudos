@@ -1,12 +1,15 @@
-var s = 'bitcoin take over the world maybe who knows perhaps';
 
-var str = s.split(' ')
-var shortestWord = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-  
-for(let c=0; c < str.length; c++) {
-  if(str[c].length < shortestWord.length){
-    shortestWord = str[c];
-  }
+var num = 7;
+var s = 1;
+
+for(let c=1; c < num; c++) {
+    if(s == 1) {
+      s--;
+      console.log(s)
+    }else {
+      s++;
+      console.log(s)
+    }
 }
-console.log(shortestWord);
+//console.log(s)
 
