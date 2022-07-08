@@ -1,15 +1,13 @@
+var str = 'xXooo'
 
-var num = 7;
-var s = 1;
+var regX = /x/ig;
+var regO = /o/ig;
 
-for(let c=1; c < num; c++) {
-    if(s == 1) {
-      s--;
-      console.log(s)
-    }else {
-      s++;
-      console.log(s)
-    }
-}
-//console.log(s)
+var contX = str.match(regX);
+console.log(contX.length)
+var contO = str.match(regO);
+console.log(contO.length)
+
+if(contX.length == contO.length) console.log('true');
+else console.log('false');
 
