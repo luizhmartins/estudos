@@ -14,6 +14,6 @@ class Cliente {
 }
 
 const Luiz = new Cliente('Luiz', '15498516844', 'luizmartins@email.com', 100);
-console.log(Luiz)
-Luiz.depositar(1000)
+console.log(Luiz);
+Luiz.depositar(1000);
 Luiz.exibirSaldo();
