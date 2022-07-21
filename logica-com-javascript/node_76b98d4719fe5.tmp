@@ -1,0 +1,15 @@
+var teclado = require('prompt-sync')();
+
+
+var s = teclado();
+
+var newS = s.filter(n => n === 1);
+console.log(newS)
+
+// if(newS.length % 2 === 0) {
+//     newS.push(0);
+//     console.log(Number(newS.join('')));
+// }else {
+//     newS.push(1);
+//     console.log(Number(newS.join('')));
+// }
