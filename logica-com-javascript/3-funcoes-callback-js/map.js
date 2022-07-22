@@ -19,7 +19,7 @@ const notasA = notas.map(nota => nota**2)
 console.log(notasA);
 
 // Utilizando o forEach().
-var newArr = [notas.length];
+var newArr = [];
 notas.forEach((nota,index) => newArr[index] = nota **2);
 console.log(newArr)
 

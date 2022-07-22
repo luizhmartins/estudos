@@ -1,5 +1,6 @@
-const str = 'Meu nome é Luiz Martins';
-console.log(str.includes('Luiz')); // retorna true
+const str = 'Meu nome é abacaxi';
+var letra = 'a'
+console.log(str.includes(letra)); // retorna true
 //console.log(str.includes('Luiz',11)) // retorna true
 
 /*

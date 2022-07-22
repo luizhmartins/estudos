@@ -1,6 +1,6 @@
 const nomes = ['Luiz', 'Karol', 'Valdeci', 'Rita', 'João'];
 
-const nomesA = nomes.filter(nome => nome.length < 5);
+const nomesA = nomes.filter((nome, index) => nome.length < 5);
 console.log(nomesA);
 
 /*
