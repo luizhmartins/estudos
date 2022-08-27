@@ -1,0 +1,18 @@
+
+public class TestaMetodoAbstrato {
+
+	public static void main(String[] args) {
+		
+		Gerente g = new Gerente();
+		EditorVideo ev = new EditorVideo();
+		Designer d = new Designer();
+		
+		g.setSalario(1000.0);
+		ev.setSalario(1000.0);
+		d.setSalario(1000.0);
+		
+		System.out.println("G Boni: " + g.getBonificacao());
+		System.out.println("EV Boni: " + ev.getBonificacao());
+		System.out.println("D Boni: " + d.getBonificacao());
+	}
+}

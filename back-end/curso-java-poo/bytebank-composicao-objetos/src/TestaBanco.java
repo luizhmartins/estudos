@@ -1,0 +1,32 @@
+
+public class TestaBanco {
+	
+	public static void main(String[] args) {
+		
+		Cliente luiz = new Cliente();
+		luiz.nome = "Luiz Martins";
+		luiz.cpf = "222.222.222-22";
+		luiz.profissao = "Programador";
+		
+		Conta contaDoLuiz = new Conta();
+		contaDoLuiz.deposita(1000);
+		
+		// Associação do Cliente luiz com a Conta contaDoLuiz
+		contaDoLuiz.titular = luiz;
+		System.out.println(contaDoLuiz.titular.nome);
+		
+		// Outro exemplo de associação
+		
+		Conta contaDaKarol = new Conta();
+		contaDaKarol.titular = new Cliente();
+		
+		contaDaKarol.titular.nome = "Karol Costa";
+		System.out.println(contaDaKarol.titular.nome);
+		contaDaKarol.deposita(150);
+		
+		
+		contaDoLuiz.transfere(1000, contaDaKarol);
+		System.out.println("Conta da Karol: " + contaDaKarol.getSaldo());
+		
+	}
+}
