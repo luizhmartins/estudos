@@ -7,7 +7,7 @@ public class Gerente extends Funcionario {
 		this.senha = senha;
 	}
 	
-	private boolean autentica(int senha) {
+	public boolean autentica(int senha) {
 		if(this.senha == senha) {
 			return true;
 		}else {
