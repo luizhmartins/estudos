@@ -1,6 +1,12 @@
 
-public class Gerente extends Funcionario implements Autenticavel{
+public class Administrador extends Funcionario implements Autenticavel {
 
+	@Override
+	public double getBonificacao() {
+		// TODO Auto-generated method stub
+		return 200;
+	}
+	
 	private int senha;
 	
 	public void setSenha(int senha) {
@@ -14,9 +20,5 @@ public class Gerente extends Funcionario implements Autenticavel{
 			return false;
 		}
 	}
-	
-	@Override
-	public double getBonificacao() {
-		return 300;
-	}
+
 }
