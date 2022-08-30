@@ -1,0 +1,20 @@
+
+
+	import java.util.Scanner;
+	
+	public class EntradaDados {
+	
+		public static void main(String[] args) {
+			
+			String nome = "Luiz";
+			int idade = 25;
+			double x = 1.4325;
+			char sexo = 'M';
+			
+			System.out.printf("%s%n", x);
+			System.out.printf("%i%n", x);
+			System.out.printf("%.2f%n", x);
+			System.out.printf("%c%n", x);
+		}
+	
+	}

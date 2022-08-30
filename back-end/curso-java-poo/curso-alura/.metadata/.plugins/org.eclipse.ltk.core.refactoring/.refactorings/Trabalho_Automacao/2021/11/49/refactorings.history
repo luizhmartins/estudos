@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;test.CadastroEmailTest&apos; to &apos;SiteDemoAutomationTest&apos;&#x0D;&#x0A;- Original project: &apos;Trabalho_Automacao&apos;&#x0D;&#x0A;- Original element: &apos;test.CadastroEmailTest&apos;&#x0D;&#x0A;- Renamed element: &apos;test.SiteDemoAutomationTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CadastroEmailTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;test{CadastroEmailTest.java[CadastroEmailTest" matchStrategy="1" name="SiteDemoAutomationTest" qualified="false" references="true" similarDeclarations="false" stamp="1638302316894" textual="false" version="1.0"/>
+</session>

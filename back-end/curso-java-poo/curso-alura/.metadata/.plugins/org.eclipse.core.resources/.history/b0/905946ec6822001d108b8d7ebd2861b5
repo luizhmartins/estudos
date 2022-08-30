@@ -1,0 +1,16 @@
+
+public class TestaReferencia {
+
+	public static void main(String[] args) {
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		
+		Gerente g1 = new Gerente();
+		
+		controle.registra(g1);
+		
+		System.out.println(controle.getSoma());
+
+	}
+
+}

@@ -1,0 +1,25 @@
+
+public class Gerente extends Funcionario {
+
+	private String senha;
+	
+	public boolean autentica(String senha) {
+		if(this.senha == senha) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	public String getSenha() {
+		return senha;
+	}
+	
+//	public double getBonificacao() {
+//		return super.getBonificacao() + super.getSalario();
+//	}
+}

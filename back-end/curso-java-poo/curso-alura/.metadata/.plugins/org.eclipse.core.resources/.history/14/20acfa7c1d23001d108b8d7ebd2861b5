@@ -1,0 +1,13 @@
+package polimorfismo;
+
+public class Animal {
+	
+	private String nome;
+	private boolean temPelos;
+	private String cor;
+	
+	public void emitirSom() {
+		System.out.println("Som de animal!");
+	}
+
+}

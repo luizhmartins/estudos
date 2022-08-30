@@ -1,0 +1,19 @@
+
+public class TestaConta {
+
+	public static void main(String[] args) {
+		
+		Conta c1 = new Conta(111, 111);
+		
+		c1.deposita(100.0);
+		
+		Conta c2 = new Conta(222, 222);
+		
+		c2.deposita(100.0);
+		
+		c1.transfere(50.0, c2);
+		
+		System.out.println("Saldo C1: " + c1.getSaldo());
+		System.out.println("Saldo C2: " + c2.getSaldo());
+	}
+}

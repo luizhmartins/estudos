@@ -1,0 +1,16 @@
+
+
+	import java.util.Scanner;
+	
+	public class EntradaDados {
+	
+		public static void main(String[] args) {
+			
+			double x = 1.4325;
+			
+			System.out.println(x);
+			System.out.printf("%.2f%n", x);
+			System.out.print(x);
+		}
+	
+	}

@@ -1,0 +1,44 @@
+
+public class Conta {
+
+	private int agencia;
+	private int numero;
+	private double saldo;
+	//private String titular;
+	
+	public Conta(int agencia, int numero) {
+		this.agencia = agencia;
+		this.numero = numero;
+	}
+	
+	public boolean deposita(double valor) {
+		if(valor > 0) {
+			this.saldo += valor;
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public boolean saca(double valor) {
+		if(valor > 0 && valor >= this.saldo) {
+			this.saldo -= valor;
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public boolean transfere(double valor, Conta destino) {
+		if(this.saca(valor)) {
+			destino.deposita(valor);
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+}
