@@ -1,5 +1,6 @@
 package application;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 import util.Calculator;
@@ -9,6 +10,7 @@ public class Program {
 
 	public static void main(String[] args) {
 		
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 			
 		/*
@@ -29,7 +31,7 @@ public class Program {
 		 * */
 		System.out.println("Enter the radius: ");
 		double radiuss = sc.nextDouble();
-		System.out.println("Circumference = " + CalculatorEstatico.circumference(radiuss));
+		System.out.println("Circumference = " + String.format("%.4f", CalculatorEstatico.circumference(radiuss)));
 		System.out.println("Volume = " + CalculatorEstatico.volume(radiuss));
 		System.out.println("PI = " + CalculatorEstatico.PI);
 		
