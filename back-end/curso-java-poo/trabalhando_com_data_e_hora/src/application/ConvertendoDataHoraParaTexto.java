@@ -17,7 +17,7 @@ public class ConvertendoDataHoraParaTexto {
 		Instant d14 = Instant.parse("2022-09-05T09:10:36Z");
 		
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 		DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
 		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
 		DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
